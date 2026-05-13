@@ -1,0 +1,77 @@
+Date : 2026-05-13 11:39:18
+Directory : f:\Python_Projects\github.com\seang59\Terraria_but_ass
+Total : 37 files,  2190 codes, 79 comments, 518 blanks, all 2787 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Python   |         37 |      2,190 |         79 |        518 |      2,787 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                    | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                       |         37 |      2,190 |         79 |        518 |      2,787 |
+| . (Files)                                                                               |          3 |         24 |          7 |         16 |         47 |
+| core                                                                                    |         11 |        462 |         15 |        122 |        599 |
+| core (Files)                                                                            |          5 |        206 |          6 |         59 |        271 |
+| core\ui                                                                                 |          6 |        256 |          9 |         63 |        328 |
+| entities                                                                                |         10 |        667 |          9 |        175 |        851 |
+| entities (Files)                                                                        |          6 |        599 |          9 |        148 |        756 |
+| entities\ammo                                                                           |          2 |         35 |          0 |         16 |         51 |
+| entities\registry                                                                       |          2 |         33 |          0 |         11 |         44 |
+| items                                                                                   |         10 |        455 |         19 |         73 |        547 |
+| items (Files)                                                                           |          3 |         57 |          0 |         21 |         78 |
+| items\equipment                                                                         |          5 |        129 |          0 |         27 |        156 |
+| items\equipment (Files)                                                                 |          2 |         80 |          0 |          5 |         85 |
+| items\equipment\armor                                                                   |          1 |          8 |          0 |          4 |         12 |
+| items\equipment\weapon                                                                  |          2 |         41 |          0 |         18 |         59 |
+| items\registry                                                                          |          2 |        269 |         19 |         25 |        313 |
+| world                                                                                   |          3 |        582 |         29 |        132 |        743 |
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                | language | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\constants.py                     | Python   |          9 |          7 |          8 |         24 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\camera.py                   | Python   |         35 |          1 |         12 |         48 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\game.py                     | Python   |         67 |          4 |         23 |         94 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\input_manager.py            | Python   |         52 |          0 |         12 |         64 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\save_manager.py             | Python   |         38 |          1 |          5 |         44 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\state_manager.py            | Python   |         14 |          0 |          7 |         21 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\ui\healthbar.py             | Python   |         26 |          4 |          6 |         36 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\ui\inventory.py             | Python   |         61 |          0 |         17 |         78 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\ui\manabar.py               | Python   |         22 |          4 |          6 |         32 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\ui\quickbar.py              | Python   |         57 |          0 |         13 |         70 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\ui\ui_manager.py            | Python   |         36 |          1 |         11 |         48 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\ui\weapon_slots.py          | Python   |         54 |          0 |         10 |         64 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\entities\ammo\ammo.py            | Python   |         14 |          0 |          6 |         20 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\entities\ammo\arrow.py           | Python   |         21 |          0 |         10 |         31 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\entities\dropped_item.py         | Python   |         80 |          0 |         17 |         97 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\entities\enemy.py                | Python   |         35 |          1 |         13 |         49 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\entities\entity.py               | Python   |        143 |          4 |         30 |        177 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\entities\entity_animator.py      | Python   |         43 |          0 |         17 |         60 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\entities\entity_manager.py       | Python   |         83 |          0 |         22 |        105 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\entities\player.py               | Python   |        215 |          4 |         49 |        268 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\entities\registry\definitions.py | Python   |         13 |          0 |          3 |         16 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\entities\registry\registry.py    | Python   |         20 |          0 |          8 |         28 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\ammo.py                    | Python   |          0 |          0 |          1 |          1 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\equipment\armor\armor.py   | Python   |          8 |          0 |          4 |         12 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\equipment\equipment.py     | Python   |         10 |          0 |          3 |         13 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\equipment\prefixes.py      | Python   |         70 |          0 |          2 |         72 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\equipment\weapon\bow.py    | Python   |         30 |          0 |         15 |         45 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\equipment\weapon\weapon.py | Python   |         11 |          0 |          3 |         14 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\game_object.py             | Python   |         47 |          0 |         16 |         63 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\placeable_block.py         | Python   |         10 |          0 |          4 |         14 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\registry\definitions.py    | Python   |        230 |         19 |         13 |        262 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\registry\registry.py       | Python   |         39 |          0 |         12 |         51 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\main.py                          | Python   |          7 |          0 |          3 |         10 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\test.py                          | Python   |          8 |          0 |          5 |         13 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\world\background_manager.py      | Python   |         35 |          1 |         13 |         49 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\world\generator.py               | Python   |        195 |         13 |         50 |        258 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\world\world.py                   | Python   |        352 |         15 |         69 |        436 |
+| Total                                                                                   |          |      2,190 |         79 |        518 |      2,787 |
++-----------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

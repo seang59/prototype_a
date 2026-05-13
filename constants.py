@@ -1,0 +1,23 @@
+# TEMP
+FPS = 120
+TICK_RATE = 1
+
+SCREEN_WIDTH, SCREEN_HEIGHT = 1920, 1080 # pixels
+TILE_SIZE = 32 # pixels
+CHUNK_SIZE = 16  # tiles per chunk side
+
+# world gen (large, medium, small) in tiles
+#WORLD_WIDTH, WORLD_HEIGHT = 3150, 900
+#WORLD_WIDTH, WORLD_HEIGHT = 2100, 600 
+WORLD_WIDTH, WORLD_HEIGHT = 1575, 450     
+
+# TEST WORLD SIZES
+#WORLD_WIDTH, WORLD_HEIGHT = 525, 150
+#WORLD_WIDTH, WORLD_HEIGHT = 210, 60
+
+
+GROUND_VARIATION = 38
+STONE_VARIATION = 40
+TRANSITION_HALF_WIDTH = 40  # tiles either side of height*0.5 where stone/dirt blend
+
+

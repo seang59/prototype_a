@@ -1,0 +1,59 @@
+Date : 2026-04-13 23:08:53
+Directory : f:\Python_Projects\github.com\seang59\Terraria_but_ass
+Total : 23 files,  1115 codes, 58 comments, 285 blanks, all 1458 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Python   |         23 |      1,115 |         58 |        285 |      1,458 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                    | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                       |         23 |      1,115 |         58 |        285 |      1,458 |
+| . (Files)                                                                               |          3 |         25 |          7 |         17 |         49 |
+| core                                                                                    |          7 |        202 |         11 |         67 |        280 |
+| core (Files)                                                                            |          2 |         92 |          4 |         33 |        129 |
+| core\ui                                                                                 |          5 |        110 |          7 |         34 |        151 |
+| entities                                                                                |          4 |        162 |          1 |         51 |        214 |
+| items                                                                                   |          7 |        282 |         18 |         42 |        342 |
+| items (Files)                                                                           |          3 |         50 |          0 |         18 |         68 |
+| items\equipment                                                                         |          2 |         78 |          0 |          4 |         82 |
+| items\equipment (Files)                                                                 |          1 |         70 |          0 |          2 |         72 |
+| items\equipment\weapon                                                                  |          1 |          8 |          0 |          2 |         10 |
+| items\registry                                                                          |          2 |        154 |         18 |         20 |        192 |
+| world                                                                                   |          2 |        444 |         21 |        108 |        573 |
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                | language | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\constants.py                     | Python   |         10 |          7 |          9 |         26 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\camera.py                   | Python   |         29 |          0 |         11 |         40 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\game.py                     | Python   |         63 |          4 |         22 |         89 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\ui\healthbar.py             | Python   |         21 |          3 |          6 |         30 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\ui\inventory.py             | Python   |          4 |          0 |          6 |         10 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\ui\manabar.py               | Python   |         17 |          3 |          6 |         26 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\ui\quickbar.py              | Python   |         43 |          0 |         11 |         54 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\core\ui\ui_manager.py            | Python   |         25 |          1 |          5 |         31 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\entities\enemy.py                | Python   |         12 |          0 |          7 |         19 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\entities\entity.py               | Python   |         96 |          1 |         23 |        120 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\entities\entity_manager.py       | Python   |         14 |          0 |         10 |         24 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\entities\player.py               | Python   |         40 |          0 |         11 |         51 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\ammo.py                    | Python   |          0 |          0 |          1 |          1 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\equipment\prefixes.py      | Python   |         70 |          0 |          2 |         72 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\equipment\weapon\weapon.py | Python   |          8 |          0 |          2 |         10 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\game_object.py             | Python   |         44 |          0 |         14 |         58 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\placeable_block.py         | Python   |          6 |          0 |          3 |          9 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\registry\definitions.py    | Python   |        124 |         18 |         11 |        153 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\items\registry\registry.py       | Python   |         30 |          0 |          9 |         39 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\main.py                          | Python   |          7 |          0 |          3 |         10 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\test.py                          | Python   |          8 |          0 |          5 |         13 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\world\generator.py               | Python   |        202 |         12 |         54 |        268 |
+| f:\Python_Projects\github.com\seang59\Terraria_but_ass\world\world.py                   | Python   |        242 |          9 |         54 |        305 |
+| Total                                                                                   |          |      1,115 |         58 |        285 |      1,458 |
++-----------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
