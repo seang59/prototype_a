@@ -32,6 +32,12 @@ class Camera:
         self.x = max(0, min(int((target[0]) * TILE_SIZE - visible_width / 2),  _WORLD_PIXEL_WIDTH - visible_width)) 
         self.y = max(0, min(int((target[1]) * TILE_SIZE - visible_height / 2), _WORLD_PIXEL_HEIGHT - visible_height))
 
+    def snap_to(self, target):
+        visible_width = SCREEN_WIDTH / self.zoom
+        visible_height = SCREEN_HEIGHT / self.zoom
+        self.x = max(0, min(int((target[0]) * TILE_SIZE - visible_width / 2), _WORLD_PIXEL_WIDTH - visible_width))
+        self.y = max(0, min(int((target[1]) * TILE_SIZE - visible_height / 2), _WORLD_PIXEL_HEIGHT - visible_height))
+
     def apply(self, rect):
         return rect.move(-self.x, -self.y)
     

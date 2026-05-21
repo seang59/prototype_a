@@ -1,7 +1,9 @@
 import json 
 import pickle
 from entities.ammo.ammo import Ammo
+from entities.enemy import Enemy
 from entities.entity_manager import EntityManager
+from entities.player import Player
 from world.world import World
 from dataclasses import dataclass, field
     
@@ -16,10 +18,14 @@ class SaveManager: #TODO
         self.save_path = f"{save_path}/{player_name}.save"
 
     def save(self, world: World, entity_manager: EntityManager):
+        for e in entity_manager.entities:
+            if isinstance(e, Player):
+                e.vx = 0
+                e.vy = 0
         data = {
             "seed": world.generator.get_world_seed(),
             "world": {f"{y},{x}": int(tile_id) for (y, x), tile_id in world.modified_tiles.items()},
-            "entities": [e for e in entity_manager.entities if not isinstance(e, Ammo)],
+            "entities": [e for e in entity_manager.entities if not isinstance(e, (Ammo, Enemy))],
         }
 
         with open(self.save_path, 'wb') as f:
@@ -29,6 +35,8 @@ class SaveManager: #TODO
         try:
             with open(self.save_path, 'rb') as f:
                 raw = pickle.load(f)
+
+            print(f"Loaded save data")
             return SaveData(
                 seed=raw["seed"],
                 modified_tiles={

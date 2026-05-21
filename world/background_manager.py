@@ -1,4 +1,3 @@
-
 from core.camera import Camera
 import pygame
 from constants import SCREEN_HEIGHT, SCREEN_WIDTH, WORLD_HEIGHT, WORLD_WIDTH, TILE_SIZE

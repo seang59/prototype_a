@@ -101,4 +101,16 @@ class EntityManager:
                 entity1.x + entity1.width > entity2.x and
                 entity1.y - entity1.height < entity2.y and
                 entity1.y > entity2.y - entity2.height)
+    
+    def get_entity_type(self, entity):
+        if isinstance(entity, Player):
+            return "player"
+        elif isinstance(entity, Enemy):
+            return "enemy"
+        elif isinstance(entity, Ammo):
+            return "ammo"
+        elif isinstance(entity, DroppedItem):
+            return "dropped_item"
+        else:
+            return "unknown"
 

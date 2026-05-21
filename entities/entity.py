@@ -3,6 +3,7 @@ from constants import TILE_SIZE, WORLD_WIDTH, WORLD_HEIGHT
 from entities.entity_animator import EntityAnimator
 
 _GRAVITY = 24
+_MAX_FALL_SPEED = 20.0
 
 class Entity:
     ENTITY_KEY = "entity"
@@ -80,6 +81,8 @@ class Entity:
 
         if not self.on_ground:
             self.vy += _GRAVITY * .0135 ** (1 - dt)
+            if self.vy > _MAX_FALL_SPEED:
+                self.vy = _MAX_FALL_SPEED
 
         if self.vx > self.max_speed:
             self.vx = self.max_speed
