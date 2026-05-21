@@ -64,7 +64,12 @@ class Player(Entity):
                 eq_slot.item.sprite = item_registry.get_sprite(eq_slot.item.id)
 
     def update(self, dt, camera: Camera, world, player, input: InputManager):
-        super().update(dt, camera, world, player, input)           
+        super().update(dt, camera, world, player, input)
+
+        if self.equipement.weapon1_slot.get_item():
+            self.equipement.weapon1_slot.get_item().update(dt)
+        if self.equipement.weapon2_slot.get_item():
+            self.equipement.weapon2_slot.get_item().update(dt)
 
         if not self.is_weapon_drawn:
             if input.is_just_pressed(pygame.K_1):
@@ -96,7 +101,7 @@ class Player(Entity):
             self.show_inventory = not self.show_inventory
 
         """MOUSE INPUT"""
-        if input.is_mouse_just_pressed(pygame.BUTTON_LEFT):
+        if input.is_mouse_held(pygame.BUTTON_LEFT):
             self.use_active_item(camera, world)
         if input.is_mouse_just_pressed(pygame.BUTTON_RIGHT):
             mouse_pos = input.mouse_pos()

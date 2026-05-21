@@ -12,7 +12,6 @@ ENEMIES = {
 
 AMMO_VARIANTS = {
     "arrow": Arrow
-
 }
 
 class EntityManager:
@@ -80,8 +79,6 @@ class EntityManager:
                  entity_manager=self,
                  damage=damage)
         )
-
-
 
     def collided_with_entity(self, entity) -> bool:
         for other in self.entities:
