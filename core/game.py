@@ -34,7 +34,7 @@ class Game:
 
         self.state_manager = StateManager()
         self.ui_manager = UIManager(self, self.clock)
-        self.state_manager.enter_state(TitleState(self), self)
+        self.state_manager.enter_state(PlayState(self), self)
         
         
 
