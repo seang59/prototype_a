@@ -2,6 +2,7 @@ import pygame
 from constants import TILE_SIZE, WORLD_WIDTH, WORLD_HEIGHT
 from entities.entity_animator import EntityAnimator
 
+
 _GRAVITY = 24
 _MAX_FALL_SPEED = 20.0
 
@@ -71,7 +72,7 @@ class Entity:
 
     @property
     def center(self):
-        return (self.x + self.width / 2, self.y - self.height / 2 + 0.5)
+        return (self.x + self.width / 2, self.y - self.height / 2 + 1)
 
     def update(self, dt, camera, world, player, input=None):
         if self.hp <= 0:

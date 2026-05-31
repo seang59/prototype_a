@@ -253,6 +253,19 @@ DEFINITIONS = {
         "attack_speed": 1.0,
         "arrow_type": "arrow",
     },
+        "lightning_quiver": {
+        "class": Quiver,
+        "id": 352,
+        "name": "Lightning Quiver",
+        "sprite": None,
+        "color": "blue",
+        "stack_size": 1,
+        "type": WeaponType.RANGED,
+        "rarity": ItemRarity.COMMON,
+        "damage": 5,
+        "attack_speed": 1.0,
+        "arrow_type": "lightning_arrow",
+    },
     # 500–599 Armor
     # 600–699 Accessories
     # 700–799 Consumables

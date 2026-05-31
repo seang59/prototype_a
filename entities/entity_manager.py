@@ -1,5 +1,6 @@
 from entities.ammo.ammo import Ammo
 from entities.ammo.arrow import Arrow
+from entities.ammo.lightning_arrow import LightningArrow
 from entities.player import Player
 from .dropped_item import DroppedItem
 from entities.enemy import Enemy
@@ -11,7 +12,8 @@ ENEMIES = {
 }
 
 AMMO_VARIANTS = {
-    "arrow": Arrow
+    "arrow": Arrow,
+    "lightning_arrow": LightningArrow
 }
 
 class EntityManager:

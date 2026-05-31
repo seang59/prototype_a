@@ -33,7 +33,7 @@ class Player(Entity):
         self.mana = mana
         self.max_mana = max_mana
 
-        self.equipement.equip_item(self.item_registry.create("basic_quiver"), self.equipement.weapon2_slot)    #TODO
+        self.equipement.equip_item(self.item_registry.create("lightning_quiver"), self.equipement.weapon2_slot)    #TODO
         self.equipement.equip_item(self.item_registry.create("the_first_bow"), self.equipement.weapon1_slot)  
         self.inventory.add_item(self.item_registry.create("dirt_block"), 100)
         self.inventory.items[9].add_item(self.item_registry.create("stone_block"), 50)
