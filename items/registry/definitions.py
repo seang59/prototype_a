@@ -26,7 +26,7 @@ DEFINITIONS = {
         "sprite": None,
         "color": None,
         "rarity": ItemRarity.COMMON,
-        "stack_size": 200,
+        "stack_size": 99,
     },
     "grass_block": {
         "class": PlaceableBlock,
@@ -36,7 +36,7 @@ DEFINITIONS = {
         "sprite_variant": "grass_corner",
         "color": "chartreuse4",
         "rarity": ItemRarity.COMMON,
-        "stack_size": 200,
+        "stack_size": 99,
     },
     "dirt_block": {
         "class": PlaceableBlock,
@@ -46,7 +46,7 @@ DEFINITIONS = {
         "sprite_variant": "dirt_corner",
         "color": "burlywood4",
         "rarity": ItemRarity.COMMON,
-        "stack_size": 200,
+        "stack_size": 99,
     },
     "stone_block": {
         "class": PlaceableBlock,
@@ -55,7 +55,7 @@ DEFINITIONS = {
         "sprite": "sprites/blocks/Sprite-0004.png",
         "color": None,
         "rarity": ItemRarity.COMMON,
-        "stack_size": 200,
+        "stack_size": 99,
     },
     "water_block": {
         "class": PlaceableBlock,
@@ -64,7 +64,7 @@ DEFINITIONS = {
         "sprite": None,
         "color": "blue",
         "rarity": ItemRarity.COMMON,
-        "stack_size": 200,
+        "stack_size": 99,
     },
     "bedrock_block": {
         "class": PlaceableBlock,
@@ -73,7 +73,7 @@ DEFINITIONS = {
         "sprite": None,
         "color": "white",
         "rarity": ItemRarity.COMMON,
-        "stack_size": 200,
+        "stack_size": 99,
     },
     "copper_ore_block": {
         "class": PlaceableBlock,
@@ -82,7 +82,7 @@ DEFINITIONS = {
         "sprite": None,
         "color": "orange",
         "rarity": ItemRarity.COMMON,
-        "stack_size": 200,
+        "stack_size": 99,
     },
     "iron_ore_block": {
         "class": PlaceableBlock,
@@ -91,7 +91,7 @@ DEFINITIONS = {
         "sprite": None,
         "color": "gray",
         "rarity": ItemRarity.COMMON,
-        "stack_size": 200,
+        "stack_size": 99,
     },
     "gold_ore_block": {
         "class": PlaceableBlock,
@@ -100,7 +100,7 @@ DEFINITIONS = {
         "sprite": None,
         "color": "yellow",
         "rarity": ItemRarity.COMMON,
-        "stack_size": 200,
+        "stack_size": 99,
     },
     "diamond_ore_block": {
         "class": PlaceableBlock,
@@ -109,7 +109,7 @@ DEFINITIONS = {
         "sprite": None,
         "color": "cyan",
         "rarity": ItemRarity.UNCOMMON,
-        "stack_size": 200,
+        "stack_size": 99,
     },
     "shatterite_ore_block": {
         "class": PlaceableBlock,
@@ -118,7 +118,7 @@ DEFINITIONS = {
         "sprite": None,
         "color": "magenta",
         "rarity": ItemRarity.RARE,
-        "stack_size": 200,
+        "stack_size": 99,
     },
 
     # 100–199 Ores / Materials

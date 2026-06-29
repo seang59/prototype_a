@@ -57,6 +57,7 @@ class InventoryUI:
                             icon_size = min(w, h) - padding * 2
                             icon_x = x + slot_x + (w - icon_size) // 2
                             icon_y = new_y + (h - icon_size) // 2
+                            text_offset = -22
 
                             if color and not sprite:
                                 pygame.draw.rect(surface, color, (icon_x, icon_y, icon_size, icon_size))
@@ -68,8 +69,8 @@ class InventoryUI:
                                 stack_text_outline = font[1].render(str(stack_size), True, (0, 0, 0))
                                 stack_text = font[0].render(str(stack_size), True, (255, 255, 255))
                                 
-                                surface.blit(stack_text_outline, (x + slot_x + w - (TILE_SIZE // 4) - padding + 1, new_y - h + (TILE_SIZE) + 1))
-                                surface.blit(stack_text, (x + slot_x + w - (TILE_SIZE // 4) - padding, new_y - h + (TILE_SIZE)))
+                                surface.blit(stack_text_outline, (x + slot_x + w - (TILE_SIZE // 4) - padding + 1 + text_offset, new_y - h + (TILE_SIZE) + 1))
+                                surface.blit(stack_text, (x + slot_x + w - (TILE_SIZE // 4) - padding + text_offset, new_y - h + (TILE_SIZE)))
                     slot_index += 1
 
 

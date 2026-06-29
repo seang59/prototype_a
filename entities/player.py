@@ -155,9 +155,10 @@ class Player(Entity):
     
     def use_active_item(self, camera, world):
         item = self.get_active_slot_item()
-        print(f"Using item: {item.name if item else 'None'}")
+
         if item:
             success = item.use(self, camera, world, self.entity_manager)
+            print(f"Using item: {item.name if success else 'Failed to use item: ' + item.name}")
 
             if isinstance(item, PlaceableBlock) and success:
                 self.inventory.remove_item(self.active_quickbar_slot)
@@ -169,14 +170,21 @@ class Inventory:
     def add_item(self, item: GameObject, count=1):
         for slot in self.items:
             if not slot.is_empty() and slot.can_stack(item, count):
-                slot.add_item(item, slot.count + count)
+                if slot.count + count > item.stack_size:
+                    remaining_count = slot.count + count - item.stack_size
+                    slot.add_item(item, item.stack_size)
+                    self.add_item(item, remaining_count)  # RECURSION W 
+                else:
+                    slot.add_item(item, slot.count + count)
                 return True
 
-        for slot in self.items:
             if slot.is_empty():
-                slot.add_item(item, count)
+                if count > item.stack_size:
+                    slot.add_item(item, item.stack_size)
+                    self.add_item(item, count - item.stack_size)  # RECURSION W
+                else:
+                    slot.add_item(item, count)  
                 return True
-
         return False  # Inventory is full
     
     def remove_item(self, slot_index: int):

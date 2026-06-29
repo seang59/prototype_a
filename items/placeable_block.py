@@ -1,4 +1,6 @@
 import pygame
+import math
+from constants import TILE_SIZE
 from items.game_object import GameObject, ItemRarity
 
 
@@ -8,7 +10,17 @@ class PlaceableBlock(GameObject):
         self.sprite_variant = sprite_variant
     
     def use(self, player, camera, world, entity_manager=None):
+        player_reach = 5  # max distance for placing blocks
+        player_x, player_y = map(int, player.center)
         x, y = camera.screen_to_tile(pygame.mouse.get_pos())
-        success = world.place_tile(y, x, self.id)
 
-        return success
+        if (x == player_x and y == player_y) or (x == player_x and y == player_y - 1):
+            return False
+        
+        dx = x - player_x
+        dy = y - player_y
+
+        if dx * dx + dy * dy > player_reach * player_reach:
+            return False
+        
+        return world.place_tile(y, x, self.id)

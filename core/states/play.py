@@ -15,17 +15,25 @@ class PlayState(State):
     def __init__(self, game: Game):
         game.screen.fill((0, 0, 0))
         pygame.display.flip()
+        self.is_paused = False
 
     def update(self, dt, game):
         game.input_manager.update()
-        if game.input_manager.should_quit() or game.input_manager.is_just_pressed(pygame.K_ESCAPE):
-                self.on_exit(game)
-                game.running = False
-                game.quit()
+        if game.input_manager.is_just_pressed(pygame.K_ESCAPE):
+                self.is_paused = not self.is_paused
+                if self.is_paused:
+                    game.ui_manager.on_enter_pause()
+                else:
+                    game.ui_manager.on_exit_pause()
+
+
+        if self.is_paused:
+            game.ui_manager.update(self.entity_manager.get_player())
+            return
 
         mouse_coords = game.input_manager.mouse_pos()         # TODO: FOLLOW PLAYER
         player_center = self.entity_manager.get_player_center()
-        #self.camera.update(self.camera.screen_to_world(mouse_coords), game.input_manager)
+        #game.camera.update(game.camera.screen_to_world(mouse_coords), game.input_manager)
         game.camera.update(player_center, game.input_manager)
 
         game.world.update(dt, game.camera)

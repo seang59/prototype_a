@@ -25,19 +25,19 @@ class LightningArrow(Ammo):
         self.animator.set_rotation(angle)   
 
         cx, cy = self.center
-        sparkle = Sparkle(cx, cy, self.vx, self.vy)
+        sparkle = Sparkle(cx, cy, self.vx, self.vy, .5)
         self.sparkles.append(sparkle)
         
         for sparkle in self.sparkles:
             sparkle.update(dt)
             if not sparkle.is_alive():
                 self.sparkles.remove(sparkle)
-
     
     def draw(self, surface, camera):
-        super().draw(surface, camera)
         for sparkle in self.sparkles:
             sparkle.draw(surface, camera)
+
+        super().draw(surface, camera)
     
     def die(self):
         super().die()
